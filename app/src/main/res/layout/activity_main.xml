@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#212121"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:text="Dhaka is Capital of Chittagong..!!"
+        android:textColor="#FFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/questiontv"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="200dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text="True"
+            android:layout_height="60dp"
+            android:textSize="18sp"
+            android:background="#DA46FAD0"
+            android:id="@+id/truebtn"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:textSize="18sp"
+            android:text="False"
+            android:background="#D32020"
+            android:id="@+id/falsebtn"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Score 0/13"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            android:layout_marginTop="150dp"
+            android:id="@+id/soretv"/>
+    </RelativeLayout>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:background="#FFFCFC"
+        android:layout_marginTop="10dp"
+        android:id="@+id/pbar"/>
+
+</LinearLayout>
